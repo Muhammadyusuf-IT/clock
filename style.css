@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inconsolata:wght@200..900&family=Noto+Sans+Mono:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c1bee1;
+}
+.container {
+  display: flex;
+}
+.clock {
+  margin: 0 30px 0 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  user-select: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.hh,
+.mm,
+.ss {
+  width: 106px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.223);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ss {
+  color: yellow;
+}
+
+.time-day {
+  display: flex;
+  gap: 5px;
+}
+.time-day p {
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+.blueBox {
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(to top, #020fff, #00eaff);
+  border-radius: 10px;
+  position: relative;
+  animation: bluebox 7s infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 60px;
+}
+
+@keyframes bluebox {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+}
+
+.orangeBox {
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(to top, #ff5900, #ffe100);
+  border-radius: 10px;
+  position: relative;
+  animation: orangebox 7s infinite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: -35px;
+}
+
+@keyframes orangebox {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
